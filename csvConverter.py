@@ -1,7 +1,7 @@
 import pandas as pd
 
-location = 'wikiElec.ElecBs3.txt'
-output = 'wikiElec.csv'
+location = 'data/wikiElec.txt'
+output = 'data/wikiElec.csv'
 
 data = open(location)
 
