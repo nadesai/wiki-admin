@@ -5,7 +5,7 @@ output = 'data/wikiUserTalk_revisions.csv'
 
 revisions = gl.SFrame.read_csv(location,delimiter=' ',header=False)
 
-columns = ['X1','X2','X3','X4','X5','X6','X7']
+columns = revisions.column_names()
 newcolumns = ['REVISION', 'article_id', 'rev_id', 'article_title', 'timestamp', 'username', 'user_id']
 renaming_dict = dict(zip(columns,newcolumns))
 
